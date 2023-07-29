@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant&family=Varela+Round&display=swap');
+
+@keyframes load {
+    0% {
+        width: 0;
+    }
+
+    25% {
+        width: 40vw;
+    }
+
+    60% {
+        width: 55vw;
+        background: red;
+    }
+
+    90% {
+        width: 84vw;
+        background: red;
+    }
+
+    99% {
+        width: 99.9vw;
+        background: red;
+    }
+
+    100% {
+        width: 100vw;
+        background-color: var(--main-bg-color);
+    }
+}
+
+/* 
+font-family: 'Assistant', sans-serif;
+font-family: 'Varela Round', sans-serif;
+ */
+
+
+/* declaire the global varialble to define one color every where. I will use it mainly for the header and footer section  */
+:root {
+    --main-bg-color: #2874f0;
+    /* --container-bg-color: rgb(235, 235, 235); */
+    --container-bg-color: rgb(255, 255, 255);
+    /* --card-bg-color: rgb(252, 211, 234); */
+    --card-bg-color: rgba(255, 255, 255, 0.53);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Progress Bar for animation in the header upper site. It just shows like the the page load */
+.progress {
+    height: 2px;
+    background-color: red;
+    animation: load 1s ease-in 1 forwards;
+}
+
+/* header background color and font-size defines here  */
+header {
+    background: var(--main-bg-color);
+    font-family: 'Varela Round', sans-serif;
+    position: sticky;
+    z-index: 2;
+}
+
+
+nav {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 88px;
+    padding: 0 25px;
+}
+
+nav ul {
+    height: 9vh;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 23px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    font-weight: bold;
+}
+
+
+.search {
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+}
+
+.search input {
+    width: 29vw;
+    height: 4vh;
+    border-radius: 5px;
+    margin: 0 .5vw 0 6vw;
+    padding: 0 12px;
+}
+
+
+.container {
+    min-height: calc(100vh - 9vh - 12vh);
+    background-color: var(--container-bg-color);
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 12px auto;
+}
+
+.slider img {
+    height: 30vh;
+    width: 80vw;
+
+}
+
+.card {
+    /* height: 25vh; */
+    max-width: 96vw;
+    margin: auto;
+    background-color: var(--card-bg-color);
+    border: 3px solid rgb(241, 241, 241);
+    border-radius: 5px;
+    font-family: 'Assistant', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.card-item {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 13vw;
+    margin: 3vh 2vw;
+}
+.lines {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 13vw;
+    margin: auto;
+}
+
+
+footer {
+    background-color: var(--main-bg-color);
+    color: white;
+    height: 12vh;
+    font-family: 'Assistant', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+}

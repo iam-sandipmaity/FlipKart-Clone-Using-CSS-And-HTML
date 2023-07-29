@@ -1,0 +1,32 @@
+@media screen and (max-width:800px) {
+
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav .logo {
+        justify-content: center;
+        padding: 10px;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+    .search{
+        justify-content: center;
+    }
+    .search input{
+        padding: 0 5vw;
+        margin: 12px 16px;
+    }
+    .btn{
+        margin: 5px;
+    }
+    .chat {
+        position: fixed;
+        /* bottom: 10vh; */
+        right: 1vw;
+        top: 70vh;
+    }
+}
